@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button-wrap {
+  display: flex;
+  gap: 5px;
+}
+
+button {
+  padding: 0.3em 1em;
+  border: 1px solid #333;
+  color: #333;
+  background-color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.history {
+  max-width: 1140px;
+  margin: 50px auto;
+}
+
+.history .header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.history .tab {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.history .tab__item {
+  flex: 0 0 20%;
+  max-width: 20%;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.history .tab__item.selected {
+  background-color: #333;
+  color: #fff;
+}
+
+.history .content {
+  margin-top: 20px;
+}
+
+.history h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.history-list {
+  border-top: 2px solid #333;
+}
+
+.history-list__item {
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.history-list .date {
+  flex: 0 0 80px;
+  text-align: center;
+}
+
+.history-list .title {
+  flex: 1 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.history-list .button-group {
+  flex: 0 0 150px;
+}

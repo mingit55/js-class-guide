@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연혁 관리</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+  <script src="./assets/jquery-3.5.1.js"></script>
+  <script src="./assets/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="history">
+    <div class="header">
+      <button class="add" data-toggle="modal" data-target="#insert-form">연혁 등록</button>
+    </div>
+    <div class="tab">
+      <div class="tab__item selected">2019년</div>
+      <div class="tab__item">2020년</div>
+      <div class="tab__item">2021년</div>
+      <div class="tab__item">2022년</div>
+      <div class="tab__item">2023년</div>
+    </div>
+    <div class="content">
+      <h3>2023년</h3>
+      <div class="history-list">
+      </div>
+    </div>
+  </div>
+
+  <form id="insert-form" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>연혁 등록</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label>연혁내용</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>연혁일자</label>
+            <input type="date" class="form-control">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal">닫기</button>
+          <button type="submit">등록하기</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <script src="./assets/js/HistoryPage.js"></script>
+</body>
+
+</html>
