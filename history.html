@@ -39,11 +39,11 @@
         <div class="modal-body">
           <div class="form-group">
             <label>연혁내용</label>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control title">
           </div>
           <div class="form-group">
             <label>연혁일자</label>
-            <input type="date" class="form-control">
+            <input type="date" class="form-control date">
           </div>
         </div>
         <div class="modal-footer">
@@ -53,6 +53,46 @@
       </div>
     </div>
   </form>
+
+
+  <form id="update-form" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>연혁 수정</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label>연혁내용</label>
+            <input type="text" class="form-control title">
+          </div>
+          <div class="form-group">
+            <label>연혁일자</label>
+            <input type="date" class="form-control date">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal">닫기</button>
+          <button type="submit">등록하기</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <div id="remove-confirm" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">연혁 삭제</div>
+          <div class="modal-body">
+            <h5>정말로 삭제하시겠습니까?</h5>
+          </div>
+          <div class="modal-footer">
+            <button data-dismiss="modal">닫기</button>
+            <button class="btn-confirm" data-dismiss="modal">확인</button>
+          </div>
+        </div>
+      </div>
+  </div>
 
   <script src="./assets/js/HistoryPage.js"></script>
 </body>

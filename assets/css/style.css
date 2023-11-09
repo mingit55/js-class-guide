@@ -29,12 +29,12 @@ button {
   margin-bottom: 20px;
 }
 
-.history .tab {
+.tab {
   display: flex;
   flex-wrap: wrap;
 }
 
-.history .tab__item {
+.tab__item {
   flex: 0 0 20%;
   max-width: 20%;
   width: 100%;
@@ -47,7 +47,7 @@ button {
   cursor: pointer;
 }
 
-.history .tab__item.selected {
+.tab__item.selected {
   background-color: #333;
   color: #fff;
 }
@@ -86,4 +86,157 @@ button {
 
 .history-list .button-group {
   flex: 0 0 150px;
+}
+
+.contact {
+  max-width: 1140px;
+  margin: 50px auto;
+}
+
+.contact-wrap {
+  margin: 20px 0;
+}
+
+.contact-item {
+  margin: 20px 0;
+}
+
+.contact-item h4 {
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #333;
+}
+
+.phone-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.phone-list__item {
+  flex: 0 0 150px;
+  max-width: 150px;
+  width: 100%;
+  border: 1px solid #888;
+  padding: 10px;
+}
+
+.phone-list__item .name {
+  font-size: 18px;
+  color: #333;
+}
+
+.phone-list__item .phone {
+  font-weight: 100;
+  color: #555;
+}
+
+.culture {
+  max-width: 1140px;
+  margin: 50px auto;
+}
+
+.culture .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #333;
+}
+
+.culture .page-status {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.culture .switch {
+  display: flex;
+}
+.culture .switch__item {
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 100;
+  border: 1px solid #333;
+  color: #333;
+}
+.culture .switch__item.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.album-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.album-item {
+  flex: 0 0 auto;
+  width: calc((100% - 90px) / 4);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.album-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  background-color: #ddd;
+  position: relative;
+}
+
+.album-item img::after {
+  content: "no image";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.album-item .title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.pager-wrap {
+  margin: 40px 0;
+}
+
+.pager {
+  margin: 0 10px;
+}
+
+.pager-wrap,
+.pager {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.pager__item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 100;
+  cursor: pointer;
+  border: 1px solid #333;
+}
+
+.pager__item.active {
+  background-color: #333;
+  color: #fff;
 }
